@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="styleCalc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <p class="frete"> Frete grátis para compras acima de R$199,90 </p>
+    <header>
+        <a href="index.html"> <p> CEEP Store </p> </a>
+    
+        <form> 
+        <input type="text" name="busca" size="50" 
+        placeholder="Faça uma pesquisa" class="barra-busca"> 
+        <a href="#"> <img src="img/busca.png" id="btnBuscar"></a>  
+        </form>
+
+     <ul>
+      <a href="calcular.html"> <li class="calcular"> Calcular Frete </li> </a>  
+      <a href="#"> <li> Adulto </li> </a>
+      <a href="#"> <li> Infantil </li> </a>
+      <a href="#"> <li> Masculino </li> </a>
+      <a href="#"> <li> Feminino </li> </a>
+      <a href="#"> <li> Fale Conosco </li> </a>
+     </ul>
+
+    </header>
+
+    <div class="banner">
+        <a href="#">
+         <img src="img/banner-camisetas-desktop.webp" name="banner" alt="Banner">   
+        </a>
+    </div>
+
+    <main class="principal">
+     <div class="container">
+
+       <div>
+        <h1 class="titulo"> CALCULE SEU FRETE</h1>
+       </div>
+
+       <div>
+        <form class="freteForm" id="freteForm">
+         <p> Preencha os dados:</p> <br>
+         <span> Escolha sua Região </span> 
+         <select class="formInput" id="options" name="options">
+         <option value="null" class="selecione">Escolha</option>
+         <option value="5">Norte</option>
+         <option value="4">Nordeste</option>  
+         <option value="3">Centro-Oeste</option>
+         <option value="2">Sul</option>
+         <option value="1">Sudeste</option>
+         </select>
+         
+         <p>Nº de camisas:<input type="numeric" placeholder="0"
+         name="numero" class="formInput" id="numero" </p> 
+         <p id="formSubmit"><button type="submit" class="formSubmit">Calcular</button> </p>  
+         <p id="formSubmit"><button type="reset" class="formSubmit">Limpar</button> </p>  
+        </form>
+       </div>
+
+       <div id="resultadoFrete">
+        <p>Total de Frete: R$
+        <span id="resultado">0.00</span></p>
+       </div>
+
+       <p class="homepage"><a href="index.html">Voltar a Página Inicial</a></p>
+
+
+     </div>
+
+    </main>
+
+    <footer>
+        <p>
+            CEEP-Store - Todos os direitos Reservados<br>
+            Avenida Santos Dumont nº 720 - Centro <br>
+            CEP: 64803-001, Floriano-PI
+        </p>
+    </footer>
+
+ <script src="javacalcular.js">  </script>
+
+</body>
+</html>

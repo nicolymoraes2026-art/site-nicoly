@@ -1,0 +1,1 @@
+window.confirm("Nosso site utiliza Cookies. Ao clicar em OK você concorda com o uso de cookies em nosso site");
